@@ -1,0 +1,35 @@
+<html> 
+   
+<title>
+    Homework5
+</title>
+    <link href="CSS2.css" rel="stylesheet" type="text/css" media="screen" />
+    <h1><legend>Pizza Ordering</legend></h1>
+
+<e> by Project-Alpha+ </e>
+
+<head>   
+<script type="text/javascript">
+    var countA = 0;function Pepperoni()
+    {countA++;document.getElementById('para1').innerHTML = countA;}
+    var countB = 0;function Hawaiian()
+    {countB++;document.getElementById('para2').innerHTML = countB;}
+    var countC = 0;function Canadian()
+    {countC++;document.getElementById('para3').innerHTML = countC;}
+    function total()
+    {var total = 0;total = countA+countB+countC;document.getElementById('total').innerHTML = total;}
+    function Clear()
+	{countA = 0; countB= 0; countC=0;document.getElementById('para1').innerHTML = 0;document.getElementById('para2').innerHTML = 0;
+	document.getElementById('para3').innerHTML = 0;
+	document.getElementById('total').innerHTML = 0;}
+   </script>
+</head>
+<body bgcolor="#FFF999">
+        <title>Menu</title>
+       <p class="topping"><l> Pepperoni</l><button onclick="Pepperoni()">$10</button><img src="http://i.imgur.com/ZIM69vX.jpg" title="source: imgur.com" /> <f id="para1">0</f></p>
+        <p class="topping"><l> Hawaiian</l> <button onclick="Hawaiian()">$11</button> <img src="http://i.imgur.com/ZGc6z7V.jpg" title="source: imgur.com" /><f id="para2">0</f> </p>
+        <p class="topping"><l> Canadian</l><button onclick="Canadian()">$14</button><img src="http://i.imgur.com/twKXatU.jpg" title="source: imgur.com" /><f id="para3">0</f></p>
+        <p class="topping"><l> No. of Toppings</l> <f id="total">0</f><button onclick="total()">Update</button> </p>
+        <p class="clear"> <button onclick="Clear()">Clear</button></p>
+</body>
+</html>
